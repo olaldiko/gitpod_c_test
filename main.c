@@ -1,11 +1,7 @@
 
-#include <iostream>
+#include <stdio.h>
 
-using namespace std;
-
-int main()
-{
-    cout << "Hello world!" << endl;
-    char *pC = 0;
+int main(int argv, char* argc[]) {
+    printf("Hello world!");
     return 0;
 }
