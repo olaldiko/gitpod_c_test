@@ -5,17 +5,12 @@ get_filename_component(problem ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 cmake_minimum_required (VERSION 3.5)
 
 # Name the project after the problem
-project(${problem} CXX)
+project(${problem} C)
 
 # Add all cpp and h files
 file(GLOB SRC_FILES
     "*.h"
-    "*.cpp"
+    "*.c"
 )
-
-# Enable C++11 features on gcc/clang
-if("${CMAKE_CXX_COMPILER_ID}" MATCHES "(GNU|Clang)")
-    set(CMAKE_CXX_FLAGS "-std=c++11")
-endif()
 
 add_executable(${problem} ${SRC_FILES})
