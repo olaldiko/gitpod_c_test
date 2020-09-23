@@ -1,5 +1,7 @@
 image: gitpod/workspace-full
 
+tasks:
+  - init: cmake .
 vscode:
   extensions:
     - ms-vscode.cpptools@1.0.1:JVeklbO2P0U3A8Dqh4ivIA==
